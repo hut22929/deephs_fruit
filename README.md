@@ -51,7 +51,7 @@ And this will train HS-CNN + HyveConv++ on the same classification task:
 <img src="images/hyve_confusion.png" alt="Confusion" style="width: 300px;"/><br>
 **Figure 2** - Training of HS-CNN + HyveConv++:
 
-```PYTHONPATH=$PYTHONPATH:. python3 classification/train.py --help``` provides helpful information regarding the parameters. 
+```PYTHONPATH=$PYTHONPATH:. python classification/train.py --help``` provides helpful information regarding the parameters. 
 For more information about the training framework PyTorch-Lightning, we refer to the official documentation (https://pytorch-lightning.readthedocs.io/en/latest/).
 
             
