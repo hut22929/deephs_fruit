@@ -406,9 +406,9 @@ def main(hparams):
     num_cpu_cores = os.cpu_count() #ใช้ cpu 
     trainer = lightning.Trainer(max_epochs=opt.num_epochs,
                                 accelerator='cpu',
-                                devices=num_cpu_cores,
+                                devices=1,
                                 logger=logger,
-                                strategy='ddp_spawn',
+                                strategy=None,
                                 min_epochs=50,
                                 callbacks=[LRLoggingCallback(),
                                            early_stop_callback,
@@ -430,7 +430,8 @@ def main(hparams):
 
 if __name__ == "__main__":
     opt = get_args()
-    num_gpus = torch.cuda.device_count()
+    #ปิด gpu
+    #num_gpus = torch.cuda.device_count()
 
     # fix the seed for reproducibility
     seed = opt.seed
