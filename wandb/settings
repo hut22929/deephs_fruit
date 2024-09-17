@@ -1,6 +1,4 @@
 [default]
-disabled = true
-mode = offline
 
 [set WANDB_MODE=online]
 

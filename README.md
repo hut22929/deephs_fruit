@@ -35,7 +35,7 @@ and the packages defined in the requirements file (```pip install -r requirement
 If all packages are installed and the data set was downloaded, the training can start.
 This will train the HS-CNN model on the ripeness classification of avocados:
 
-    PYTHONPATH=$PYTHONPATH:. python classification/train.py --data_path /folder/of/downloaded/dataset/ --model deephs_net --fruit avocado --classification_type ripeness --seed 23312323
+    PYTHONPATH=$PYTHONPATH:. python classification/train.py --data_path "D:\College\Project" --model deephs_net --fruit mango --classification_type ripeness --seed 23312323 --log_path "D:\College\Project\test_log_path" --num_epochs 2
 
 <img src="images/deephs_net_loss.png" alt="Loss" style="width: 300px;"/><br>
 <img src="images/deephs_net_accuracy.png" alt="Accuracy" style="width: 300px;"/><br>
